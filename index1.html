@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHEERS4EU - Circular Economy in the Agroindustrial Sector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#e8f5e9',
+                            DEFAULT: '#2e7d32', // Verde principal
+                            dark: '#1b5e20',
+                        },
+                        accent: {
+                            DEFAULT: '#0f172a', // Azul escuro
+                            light: '#1e293b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #f8fafc; 
+        }
+        /* Fundo da secção principal (Hero) simulando a imagem com sobreposição */
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.4)), url('https://images.unsplash.com/photo-1598506540581-22aa4e3ff1b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3 cursor-pointer">
+                    <img src="unnamed.png" alt="CHEERS4EU Logo" class="h-12 w-auto object-contain" onerror="this.src='https://via.placeholder.com/50x50?text=Logo'">
+                    <div class="flex flex-col">
+                        <span class="font-bold text-xl text-accent leading-tight">CHEERS<span class="text-brand">4EU</span></span>
+                        <span class="text-[10px] uppercase text-gray-500 font-semibold tracking-wider">Circular Economy in the<br>Agroindustrial Sector</span>
+                    </div>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-6 text-sm font-medium text-gray-700">
+                    <a href="#" class="text-brand border-b-2 border-brand py-2">Home</a>
+                    <a href="#" class="hover:text-brand transition-colors">Opportunities</a>
+                    <a href="#" class="hover:text-brand transition-colors">Circular Practices</a>
+                    <a href="#" class="hover:text-brand transition-colors">Resource Exchange</a>
+                    <a href="#" class="hover:text-brand transition-colors">Shared Resources</a>
+                    <a href="#" class="hover:text-brand transition-colors">Funding</a>
+                    <a href="#" class="hover:text-brand transition-colors">Knowledge Hub</a>
+                    <a href="#" class="hover:text-brand transition-colors">About the Project</a>
+                </div>
+
+                <div class="hidden lg:flex items-center space-x-4">
+                    <div class="flex items-center gap-1 cursor-pointer hover:text-brand text-sm font-medium">
+                        <i class="fa-solid fa-globe"></i> EN <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </div>
+                    <button class="text-gray-700 font-medium hover:text-brand px-3 py-2 text-sm transition-colors">Log in</button>
+                    <button class="bg-brand text-white px-5 py-2 rounded-md font-medium text-sm hover:bg-brand-dark transition-colors">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero-bg relative pt-20 pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="w-full md:w-2/3 lg:w-1/2">
+                <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+                    Together for a circular agroindustry in Portugal's Central Region
+                </h1>
+                <p class="text-lg text-gray-200 mb-8 max-w-xl">
+                    CHEERS4EU is the digital meeting point for businesses, researchers and public entities to collaborate, share resources and drive the transition to a circular economy.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-brand text-white px-6 py-3 rounded-md font-semibold hover:bg-brand-dark transition-colors flex items-center gap-2 shadow-lg">
+                        Post an opportunity <i class="fa-solid fa-plus-circle"></i>
+                    </button>
+                    <button class="bg-white text-brand px-6 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 shadow-lg">
+                        Explore opportunities <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-12 relative z-20">
+        <div class="bg-white rounded-xl shadow-lg border border-gray-100 flex flex-wrap lg:flex-nowrap justify-between items-center overflow-hidden">
+            <div class="w-1/2 lg:w-1/4 p-6 flex items-center gap-4 border-b lg:border-b-0 lg:border-r border-gray-100">
+                <div class="w-12 h-12 bg-brand-light text-brand rounded-full flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold text-accent"></div>
+                    <div class="text-sm text-gray-500">Registered<br>organizations</div>
+                </div>
+            </div>
+            <div class="w-1/2 lg:w-1/4 p-6 flex items-center gap-4 border-b lg:border-b-0 lg:border-r border-gray-100">
+                <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold text-accent"></div>
+                    <div class="text-sm text-gray-500">Active<br>opportunities</div>
+                </div>
+            </div>
+            <div class="w-1/2 lg:w-1/4 p-6 flex items-center gap-4 lg:border-r border-gray-100">
+                <div class="w-12 h-12 bg-amber-50 text-amber-500 rounded-full flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-recycle"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold text-accent"></div>
+                    <div class="text-sm text-gray-500">Shared<br>resources</div>
+                </div>
+            </div>
+            <div class="w-1/2 lg:w-1/4 p-6 flex items-center gap-4">
+                <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-xl">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div>
+                    <div class="text-2xl font-bold text-accent"></div>
+                    <div class="text-sm text-gray-500">Established<br>partnerships</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+            <div class="bg-white p-5 rounded-xl border border-gray-200 hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="w-10 h-10 bg-brand text-white rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-brand transition-colors"></i>
+                </div>
+                <h3 class="font-bold text-accent mb-1">Circular Practices</h3>
+                <p class="text-xs text-gray-500">Discover best practices and success stories in agroindustry.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-gray-200 hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-right-left"></i>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-brand transition-colors"></i>
+                </div>
+                <h3 class="font-bold text-accent mb-1">Resource Exchange</h3>
+                <p class="text-xs text-gray-500">Find or offer waste, by-products and raw materials.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-gray-200 hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="w-10 h-10 bg-teal-500 text-white rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-users-cog"></i>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-brand transition-colors"></i>
+                </div>
+                <h3 class="font-bold text-accent mb-1">Shared Resources</h3>
+                <p class="text-xs text-gray-500">Share equipment, infrastructure and capacities.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-gray-200 hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="w-10 h-10 bg-indigo-600 text-white rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-euro-sign"></i>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-brand transition-colors"></i>
+                </div>
+                <h3 class="font-bold text-accent mb-1">Funding</h3>
+                <p class="text-xs text-gray-500">Access funding opportunities for circular economy projects.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-gray-200 hover:shadow-md transition-shadow cursor-pointer group">
+                <div class="flex justify-between items-start mb-3">
+                    <div class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <i class="fa-solid fa-arrow-right text-gray-300 group-hover:text-brand transition-colors"></i>
+                </div>
+                <h3 class="font-bold text-accent mb-1">Knowledge Hub</h3>
+                <p class="text-xs text-gray-500">Access tools, studies, guides and training.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2">
+                <div class="flex justify-between items-end mb-6">
+                    <h2 class="text-2xl font-bold text-accent flex items-center gap-2">
+                        <i class="fa-solid fa-leaf text-brand"></i> Featured Opportunities
+                    </h2>
+                    <a href="#" class="text-sm font-medium text-brand hover:underline flex items-center gap-1">
+                        View all opportunities <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="flex overflow-x-auto hide-scrollbar gap-2 mb-6 pb-2">
+                    <button class="bg-brand text-white px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">All</button>
+                    <button class="bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Offer</button>
+                    <button class="bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Search</button>
+                    <button class="bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Partnerships</button>
+                    <button class="bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Waste / By-products</button>
+                    <button class="bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Services</button>
+                    <button class="bg-white border border-gray-200 text-gray-600 hover:bg-gray-50 px-4 py-1.5 rounded-full text-sm font-medium whitespace-nowrap">Equipment</button>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-brand-light text-brand rounded-lg flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-solid fa-seedling"></i>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-brand text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase mb-1">Offer</span>
+                                <h3 class="font-bold text-accent text-lg">Grape pomace</h3>
+                                <p class="text-sm text-gray-500 mb-1">Winery • Bairrada</p>
+                                <p class="text-sm text-gray-600">We offer grape pomace for composting or biogas production.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center gap-4 w-full md:w-auto mt-2 md:mt-0 pt-4 md:pt-0 border-t md:border-t-0 border-gray-100">
+                            <div class="flex items-center gap-2 text-brand font-medium text-sm">
+                                <i class="fa-solid fa-leaf"></i>
+                                <div class="text-left md:text-right">
+                                    <div class="font-bold"></div>
+                                    <div class="text-xs text-gray-500 font-normal">Available</div>
+                                </div>
+                            </div>
+                            <button class="bg-brand text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-dark transition-colors">View details</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-solid fa-wheat-awn"></i>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-blue-600 text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase mb-1">Request</span>
+                                <h3 class="font-bold text-accent text-lg">Organic fertiliser for vineyards</h3>
+                                <p class="text-sm text-gray-500 mb-1">Agricultural Company • Coimbra</p>
+                                <p class="text-sm text-gray-600">We are looking for organic fertiliser to improve soil health.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center gap-4 w-full md:w-auto mt-2 md:mt-0 pt-4 md:pt-0 border-t md:border-t-0 border-gray-100">
+                            <div class="flex items-center gap-2 text-blue-600 font-medium text-sm">
+                                <i class="fa-solid fa-handshake"></i>
+                                <div class="text-left md:text-right">
+                                    <div class="font-bold">Partnership</div>
+                                    <div class="text-xs text-gray-500 font-normal">Collaboration</div>
+                                </div>
+                            </div>
+                            <button class="bg-brand text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-dark transition-colors">View details</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-xl p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 hover:shadow-md transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-amber-50 text-amber-500 rounded-lg flex items-center justify-center text-2xl shrink-0">
+                                <i class="fa-solid fa-cheese"></i>
+                            </div>
+                            <div>
+                                <span class="inline-block bg-brand text-white text-[10px] font-bold px-2 py-0.5 rounded uppercase mb-1">Offer</span>
+                                <h3 class="font-bold text-accent text-lg">Whey</h3>
+                                <p class="text-sm text-gray-500 mb-1">Dairy Industry • Coimbra</p>
+                                <p class="text-sm text-gray-600">We offer whey for animal feed or other uses.</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row md:flex-col items-center md:items-end justify-between md:justify-center gap-4 w-full md:w-auto mt-2 md:mt-0 pt-4 md:pt-0 border-t md:border-t-0 border-gray-100">
+                            <div class="flex items-center gap-2 text-brand font-medium text-sm">
+                                <i class="fa-solid fa-leaf"></i>
+                                <div class="text-left md:text-right">
+                                    <div class="font-bold"></div>
+                                    <div class="text-xs text-gray-500 font-normal">Available</div>
+                                </div>
+                            </div>
+                            <button class="bg-brand text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-brand-dark transition-colors">View details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white border border-gray-200 rounded-xl p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-lg font-bold text-accent flex items-center gap-2">
+                            <i class="fa-solid fa-euro-sign text-blue-600"></i> Funding Spotlight
+                        </h2>
+                        <a href="#" class="text-xs font-medium text-brand hover:underline flex items-center gap-1">View all <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-brand-light text-brand rounded-lg flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-accent">Horizon Europe</h3>
+                            <p class="text-xs text-gray-500 mt-1 mb-2">Support for circular economy and bioeconomy projects.</p>
+                            <div class="flex items-center gap-1 text-xs text-gray-500 mb-3">
+                                <i class="fa-regular fa-clock"></i> Deadline: 18 Sept 2025
+                            </div>
+                            <button class="bg-brand text-white px-3 py-1.5 rounded text-xs font-medium hover:bg-brand-dark transition-colors">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h2 class="text-lg font-bold text-accent flex items-center gap-2">
+                            <i class="fa-regular fa-calendar-alt text-brand"></i> Upcoming Events
+                        </h2>
+                        <a href="#" class="text-xs font-medium text-brand hover:underline flex items-center gap-1">View all <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4 items-start border-b border-gray-100 pb-4">
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-2 text-center min-w-[50px]">
+                                <div class="text-lg font-bold text-accent leading-none">03</div>
+                                <div class="text-[10px] uppercase font-bold text-gray-500 mt-1">Jun</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-accent text-sm">CHEERS4EU Workshop</h3>
+                                <p class="text-xs text-gray-500 mt-0.5">Industrial symbiosis in the Central Region</p>
+                                <div class="flex items-center gap-1 text-xs text-gray-400 mt-1">
+                                    <i class="fa-solid fa-location-dot"></i> Coimbra, Portugal
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="bg-gray-50 border border-gray-200 rounded-lg p-2 text-center min-w-[50px]">
+                                <div class="text-lg font-bold text-accent leading-none">18</div>
+                                <div class="text-[10px] uppercase font-bold text-gray-500 mt-1">Jun</div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-accent text-sm">Circular Economy Training</h3>
+                                <p class="text-xs text-gray-500 mt-0.5">Tools and circular business models</p>
+                                <div class="flex items-center gap-1 text-xs text-gray-400 mt-1">
+                                    <i class="fa-solid fa-location-dot"></i> Online
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-brand-light to-white border border-brand-light rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div>
+                        <h3 class="font-bold text-accent">Join the CHEERS4EU community!</h3>
+                        <p class="text-xs text-gray-600 mt-1">Register and start collaborating for a more circular future.</p>
+                    </div>
+                    <button class="border-2 border-brand text-brand px-4 py-2 rounded-md text-sm font-bold hover:bg-brand hover:text-white transition-colors flex items-center gap-2 whitespace-nowrap">
+                        Register <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <div class="border-t border-gray-200 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-users-line text-2xl text-brand"></i>
+                    <div>
+                        <h4 class="font-bold text-sm text-accent">Multi-helix collaboration</h4>
+                        <p class="text-xs text-gray-500 mt-1">Bringing together industry, academia, public and private stakeholders.</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-link text-2xl text-brand"></i>
+                    <div>
+                        <h4 class="font-bold text-sm text-accent">Circular value chains</h4>
+                        <p class="text-xs text-gray-500 mt-1">Promoting circular business models and value chain transformation.</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-people-group text-2xl text-brand"></i>
+                    <div>
+                        <h4 class="font-bold text-sm text-accent">Social impact</h4>
+                        <p class="text-xs text-gray-500 mt-1">Creating environmental, economic and social value for our communities.</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <i class="fa-solid fa-map-location-dot text-2xl text-brand"></i>
+                    <div>
+                        <h4 class="font-bold text-sm text-accent">For the Central Region</h4>
+                        <p class="text-xs text-gray-500 mt-1">Acting locally, collaborating regionally, impacting globally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-accent text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-2">
+                <img src="unnamed.png" alt="CHEERS4EU Logo" class="h-8 bg-white rounded-full p-0.5">
+                <span class="font-bold">CHEERS4EU</span>
+            </div>
+            <div class="text-xs text-gray-400">
+                &copy; 2024 CHEERS4EU Project. All rights reserved.
+            </div>
+            <div class="flex items-center gap-3 text-xs">
+                <span>Funded by the European Union</span>
+                <i class="fa-brands fa-eu text-2xl text-blue-400"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
